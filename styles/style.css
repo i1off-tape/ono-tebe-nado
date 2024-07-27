@@ -1,12 +1,12 @@
 /* место для вашего кода */
 
 .header {
-  padding: 92px 24px 96px;
-}
-
-.header__menu {
   display: grid;
-  grid-template-columns: 2fr 0fr 2fr;
+  grid-template-columns: 1fr 0fr 1fr;
+  justify-items: center;
+  align-items: center;
+  align-content: stretch;
+  padding: 93px 24px 96px;
 }
 
 .header__links_list {
@@ -40,7 +40,8 @@
 .address {
   display: flex;
   flex-direction: column;
-  padding: 6px 25px 2px 187px;
+  flex-wrap: wrap;
+  padding-left: 125px;
   line-height: 24.3px;
 }
 
@@ -54,8 +55,8 @@
 
 .cover {
   position: relative;
-  z-index: -2;
-  height: 757px;
+  z-index: 1;
+  min-height: 757px;
   background-image: url('../images/cover.jpg');
   background-position: center;
   background-size: cover;
@@ -149,7 +150,7 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 25px;
+  gap: 25px;
   padding-top: 27px;
 }
 
@@ -157,7 +158,6 @@
   width: 334px;
   min-height: 563px;
   list-style: none;
-  /* flex-grow: 1; */
 }
 
 .card-link {
@@ -263,34 +263,39 @@
   letter-spacing: 0.008em;
 }
 
-.about__text-two {
+.about__text:last-of-type {
   padding-top: 24px;
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
   letter-spacing: 0;
 }
 
 /* отступ для слова "они" из макета */
-.about__text-two .about__text-spacing-word {
+.about__text:last-of-type .about__text-spacing-word {
   letter-spacing: 0.1em;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 176px 50px 77px;
+  padding: 175px 50px 87px;
 }
 
 .footer__menu {
-  display: flex;
-  gap: 223px;
+    display: flex;
+    padding-left: 39px;
 }
 
 .footer__address {
   display: flex;
   flex-direction: column;
   line-height: 24.3px;
+}
+
+.footer__address-link {
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-list {
