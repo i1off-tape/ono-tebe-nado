@@ -11,8 +11,10 @@
 
 .header__links_list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 33px;
-  padding: 44px 36px 39px 27px;
+  padding: 4px 9px 0 0;
 }
 
 .header__links_list-item {
